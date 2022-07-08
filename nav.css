@@ -11,7 +11,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  color: rgb(20, 19, 19);
+  color: rgb(255, 252, 252);
   align-items: center;
   text-align: center;
 }
@@ -52,3 +52,24 @@
   align-items: center;
   justify-content: center;
 }
+
+
+/* bar media queries */
+@media only screen and (min-width:418px) and (max-width:847px) {
+  .bar{
+    height: 143px;
+    
+  }
+ }
+ @media only screen and (min-width:284px) and (max-width:565px) {
+  .bar{
+    height: 219px;
+    
+  }
+ }
+ @media only screen and (min-width:0px) and (max-width:283px) {
+  .bar{
+    height: 221px;
+    
+  }
+ }
