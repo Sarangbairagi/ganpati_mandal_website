@@ -1,0 +1,54 @@
+/* css reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.bar {
+  display: flex;
+  border: 2px solid red;
+  background-color: red;
+  height: 75px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgb(20, 19, 19);
+  align-items: center;
+  text-align: center;
+}
+.items {
+  font-size: 23px;
+  font-weight: bolder;
+  border: 2px solid red;
+  width: 257px;
+  margin: 5px;
+  padding: 5px;
+  height: 50px;
+}
+
+#phoneicon img {
+  /* border: 2px solid yellow; */
+  width: 36px;
+  height: 34px;
+  margin: 12px;
+}
+#phoneicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#two img {
+  width: 29px;
+  height: 26px;
+  padding: 9px;
+  margin: 0px;
+}
+#three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
