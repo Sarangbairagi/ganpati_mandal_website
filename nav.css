@@ -3,6 +3,10 @@
   margin: 0px;
   padding: 0px;
 }
+
+/*..........................................................................................................................*/
+
+/* bar css aah */
 .bar {
   display: flex;
   border: 2px solid red;
@@ -43,7 +47,7 @@
 }
 #two img {
   width: 29px;
-  height: 26px;
+  height: 32px;
   padding: 9px;
   margin: 0px;
 }
@@ -52,7 +56,10 @@
   align-items: center;
   justify-content: center;
 }
+ 
+/* end of bar css */
 
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* bar media queries */
 @media only screen and (min-width:418px) and (max-width:847px) {
@@ -73,3 +80,29 @@
     
   }
  }
+
+ /* end of bar media queries */
+
+ /*.........................................................................................................................*/
+
+/* Bar2 cha css ahh */
+
+ .bar2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  /* border: 10px solid rgb(47, 82, 255); */
+}
+#logobar img {
+  display: inline-block;
+  /* border: 10px solid rgb(0, 255, 68); */
+  width: 952px;
+height: 485px;
+}
+#logobar2 img{
+  width: 952px;
+height: 484px;
+}
+
+/* end of css bar2 */
