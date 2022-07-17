@@ -2,6 +2,8 @@
 * {
   margin: 0px;
   padding: 0px;
+  /* box-sizing: border-box; */
+  /* box-sizing: content-box; */
 }
 
 /*..........................................................................................................................*/
@@ -11,7 +13,7 @@
   display: flex;
   border: 2px solid red;
   background-color: red;
-  height: 75px;
+  height: 65px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,7 +28,7 @@
   width: 257px;
   margin: 5px;
   padding: 5px;
-  height: 50px;
+  height: 42px;
 }
 
 #phoneicon img {
@@ -46,8 +48,8 @@
   justify-content: center;
 }
 #two img {
-  width: 29px;
-  height: 32px;
+  width: 50px;
+  height: 40px;
   padding: 9px;
   margin: 0px;
 }
@@ -56,54 +58,48 @@
   align-items: center;
   justify-content: center;
 }
- 
+
 /* end of bar css */
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* bar media queries */
-@media only screen and (min-width:418px) and (max-width:847px) {
-  .bar{
+@media only screen and (min-width: 418px) and (max-width: 847px) {
+  .bar {
     height: 143px;
-    
   }
- }
- @media only screen and (min-width:284px) and (max-width:565px) {
-  .bar{
+}
+@media only screen and (min-width: 284px) and (max-width: 565px) {
+  .bar {
     height: 219px;
-    
   }
- }
- @media only screen and (min-width:0px) and (max-width:283px) {
-  .bar{
+}
+@media only screen and (min-width: 0px) and (max-width: 283px) {
+  .bar {
     height: 221px;
-    
   }
- }
+}
 
- /* end of bar media queries */
+/* end of bar media queries */
 
- /*.........................................................................................................................*/
 
-/* Bar2 cha css ahh */
-/* 
- .bar2 {
+/*.........................................................................................................................*/
+
+/* Bar cha css ahh */
+
+#videobar {
   display: flex;
+  /* border: 2px solid red; */
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-between;
-  border: 10px solid rgb(47, 82, 255);
+  align-content: center;
 }
-#logobar img {
-  display: inline-block;
-  /* border: 10px solid rgb(0, 255, 68); */
-  /* width: 952px;
-height: 500px;
+video {
+  display: block;
+  width: 2300px;
+  height: 1045px;
 }
-#logobar2 img{
-  width: 952px;
-height: 500px;
-} */
 
 /* end of css bar2 */
 
@@ -118,42 +114,87 @@ height: 500px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.858);
+  background-color: rgb(0, 4, 19);
 }
 #menu ul {
   display: flex;
   /* border: 2px solid rgb(98, 177, 56); */
   height: 50px;
-  width: 1000px;
+  width: 1100px;
   align-items: center;
   justify-content: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 #menu ul li {
   list-style: none;
 }
 #menu ul li a {
   text-decoration: none;
-  color: rgb(255, 2, 2);
+  color: rgb(255, 255, 255);
   font-size: 31px;
+
+  font-weight: bold;
 }
-p {
+#menu ul li a:hover {
+  color: rgb(255, 98, 0);
+}
+#navbar #logo #logoname p {
   color: rgb(255, 115, 0);
-  font-size: 40px;
+  font-size: 39px;
+  font-weight: bolder;
+  font-family: "Ranga", cursive;
+  font-family: "Teko", sans-serif;
   /* border: 2px solid green; */
   margin: 100px;
-  margin-right: 10px;
+  margin-right: -13px;
   width: 364px;
   margin-left: -5px;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-name: logoNP;
+}
+@keyframes logoNP {
+  0% {
+    transform: translateX(250px);
+  }
+  100% {
+    transform: translate(0);
+  }
+
+  /* other animation */
+  /* 0% {
+		font-size: 10px;
+	}
+	30% {
+		font-size: 15px;
+	}
+	100% {
+		font-size: 12px;
+	} */
 }
 #logoimg img {
   width: 300px;
   height: 100px;
-  /* padding-right: 112px; */
-  margin-left: -85px;
+  /* border: 2px solide green; */
+  padding-right: 16px;
+  margin-left: -36px;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-name: logoIMG;
 }
-
+@keyframes logoIMG {
+  0% {
+    transform: translateX(250px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 #logo {
   display: flex;
   /* border: 10px solid rgba(63, 15, 255, 0.2); */
@@ -164,6 +205,137 @@ p {
   flex-direction: row-reverse;
   width: 700px;
   height: 60px;
+}
+
+#menu ul li a {
+  /* border: 2px solid yellow; */
+  border-radius: 10px;
+  /* transition: all 1s ease-in-out 0.3s; */
+}
+/* hover kelyavr khali varti kelyavar hai hota height */
+.list:hover {
+  /* background-color: rgb(242, 57, 0); */
+  height: 60px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*...........................................................**body1 start........................................................................*/
+#body1 {
+  padding: 80px;
+  /* border: 10px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#lorem1 p {
+  font-size: xx-large;
+  width: 500px;
+  /* border: 2px solid red; */
+  position: relative;
+  animation-name: psar1;
+  flex-wrap: wrap;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  text-align: justify;
+  margin-right: 50px;
+}
+@keyframes psar1 {
+  0% {
+    transform: translateX(250px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+#img1 img {
+  width: 500px;
+  height: 350px;
+  /* border: 2px solid green; */
+  border-radius: 35px;
+  box-shadow: 5px 10px 5px rgb(93, 87, 87);
+  position: relative;
+  animation-name: imgsar;
+  flex-wrap: wrap;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  transition: all 1s ease-in-out 0.3s;
+}
+#img1 img:hover {
+  border-radius: 0px;
+  height: 800px;
+  width: 800px;
+}
+@keyframes imgsar {
+  0% {
+    transform: translateX(250px);
+  }
+  100% {
+    transform: translatex(0);
+  }
+}
+
+/*...........................................................**body2 start........................................................................*/
+#body2 {
+  padding: 80px;
+  /* border: 10px solid rgb(30, 28, 28); */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+#lorem2 p {
+  font-size: xx-large;
+  width: 500px;
+  /* border: 2px solid red; */
+  position: relative;
+  animation-name: psar2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  text-align: justify;
+  animation-delay: 4s;
+  margin-left: 30px;
+}
+@keyframes psar2 {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#img2 img {
+  width: 500px;
+  height: 350px;
+  border: 2px solid black;
+  box-shadow: 5px 10px 5px rgb(85, 82, 82);
+  border-radius: 35px;
+  position: relative;
+  margin-right: 35px;
+  animation-name: imgsar2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 4s;
+  transition: all 1s ease-in-out 0.3s;
+}
+#img2 img:hover {
+  border-radius: 0px;
+  height: 800px;
+  width: 800px;
+}
+@keyframes imgsar2 {
+  0% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
