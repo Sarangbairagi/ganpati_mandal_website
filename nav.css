@@ -2,8 +2,17 @@
 * {
   margin: 0px;
   padding: 0px;
-  /* box-sizing: border-box; */
-  /* box-sizing: content-box; */
+
+  box-sizing: border-box;
+}
+header {
+  /* border: 2px solid rgb(34, 255, 0); */
+  height: 1000px;
+  background-image: url(/photos/barimg.jpg);
+  background-position: center;
+  opacity: 1;
+  background-size: cover;
+  
 }
 
 /*..........................................................................................................................*/
@@ -48,8 +57,8 @@
   justify-content: center;
 }
 #two img {
-  width: 50px;
-  height: 40px;
+  width: 56px;
+  height: 56px;
   padding: 9px;
   margin: 0px;
 }
@@ -82,26 +91,64 @@
 
 /* end of bar media queries */
 
+/*.........................................................................................................................*/
+
+/* BAR3 sart
+#bar3{
+border: 2px solid red;
+display: flex;
+justify-content: center;
+
+} */
 
 /*.........................................................................................................................*/
 
-/* Bar cha css ahh */
+/* videoBar cha css ahh */
 
-#videobar {
+/* #videobar {
   display: flex;
   /* border: 2px solid red; */
-  flex-wrap: wrap;
+/* flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  position: relative;
 }
-video {
-  display: block;
+video  {
   width: 2300px;
-  height: 1045px;
+  font-optical-sizing: 2;
+  height: 1090px;
+  position: relative;
+  z-index: 0; */
+/* } */
+/* .overlay{
+    border: 3px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  } */
+/* .overlay {
+    font-size: xx-large;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 596px;
+  left: 47px;
+  z-index: 1;
+  font-weight: bolder;
 }
-
-/* end of css bar2 */
+.d1 p {
+  font-size: 140px;
+}
+.d2 p {
+  font-size: 73px;
+}
+.d3 p {
+  font-size: 140px;
+} */
+/* end of css videobar */
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -116,7 +163,9 @@ video {
   justify-content: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgb(0, 4, 19);
+  background-color: rgb(97, 127, 234);
+  background: transparent;
+  background-color: #000000a3;
 }
 #menu ul {
   display: flex;
@@ -140,9 +189,11 @@ video {
 }
 #menu ul li a:hover {
   color: rgb(255, 98, 0);
+  text-decoration: underline;
+  
 }
 #navbar #logo #logoname p {
-  color: rgb(255, 115, 0);
+  color: rgb(255, 85, 0);
   font-size: 39px;
   font-weight: bolder;
   font-family: "Ranga", cursive;
@@ -177,7 +228,7 @@ video {
 	} */
 }
 #logoimg img {
-  width: 300px;
+  width: 350px;
   height: 100px;
   /* border: 2px solide green; */
   padding-right: 16px;
@@ -222,7 +273,7 @@ video {
 
 /*...........................................................**body1 start........................................................................*/
 #body1 {
-  padding: 80px;
+  padding: 130px;
   /* border: 10px solid red; */
   display: flex;
   flex-direction: row;
@@ -242,6 +293,8 @@ video {
   animation-delay: 3s;
   text-align: justify;
   margin-right: 50px;
+  color: rgb(0, 0, 0);
+  
 }
 @keyframes psar1 {
   0% {
@@ -281,7 +334,7 @@ video {
 
 /*...........................................................**body2 start........................................................................*/
 #body2 {
-  padding: 80px;
+  padding: 40px;
   /* border: 10px solid rgb(30, 28, 28); */
   display: flex;
   flex-wrap: wrap;
@@ -301,6 +354,7 @@ video {
   text-align: justify;
   animation-delay: 4s;
   margin-left: 30px;
+  color: rgb(0, 0, 0);
 }
 @keyframes psar2 {
   0% {
@@ -335,6 +389,67 @@ video {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+/*...........................................................**body3 start**........................................................................*/
+
+#body3 {
+  padding: 80px;
+  /* border: 10px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#lorem3 p {
+  font-size: xx-large;
+  width: 500px;
+  /* border: 2px solid red; */
+  position: relative;
+  animation-name: psar3;
+  flex-wrap: wrap;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  text-align: justify;
+  color: rgb(0, 0, 0);
+  margin-right: 50px;
+}
+@keyframes psar3 {
+  0% {
+    transform: translateX(250px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+#img3 img {
+  width: 500px;
+  height: 350px;
+  /* border: 2px solid green; */
+  border-radius: 35px;
+  box-shadow: 5px 10px 5px rgb(93, 87, 87);
+  position: relative;
+  animation-name: imgsar3;
+  flex-wrap: wrap;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  transition: all 1s ease-in-out 0.3s;
+}
+#img3 img:hover {
+  border-radius: 0px;
+  height: 800px;
+  width: 800px;
+}
+@keyframes imgsar3 {
+  0% {
+    transform: translateX(250px);
+  }
+  100% {
+    transform: translatex(0);
   }
 }
 

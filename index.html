@@ -13,37 +13,53 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="nav.css" />
+
     <style>
-      footer {
+      #myfooter {
+        /* border: 2px solid red; */
+        background: transparent;
+        background-color: rgba(0, 0, 0, 0.284);
+      }
+      .footsologon {
+        /* border: 2px solid green; */
+        height: 106px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 67px;
+      }
+      #footerlogo {
+        /* border: 2px solid blue; */
+        margin-top: 20px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
-        color: black;
         align-items: center;
-        border: 2px solid red;
-        height: 200px;
-        background-color: aqua;
+      }
+      #footerlogo img {
+        /* border: 2px solid black; */
+        margin-left: 20px;
       }
     </style>
   </head>
   <body>
+    <!-- **********************************************************..Red BAR..********************************************************************** -->
+    <div class="bar">
+      <div class="items" id="phoneicon">
+        <img src="/icons/phone2.png" alt="" />+7517907798
+      </div>
+      <div class="items" id="two">
+        <img src="/icons/email.png" alt="emailicon" /> bairagiv401@gmail.com
+      </div>
+      <div class="items" id="three">register no.287493</div>
+    </div>
+    <!-- ******************************************************..Red BAR END..********************************************************************** -->
+
     <!-- **********************************************************..Start of header..**************************************************************** -->
     <header>
-      <!-- **********************************************************..Red BAR..********************************************************************** -->
-      <div class="bar">
-        <div class="items" id="phoneicon">
-          <img src="/icons/phone2.png" alt="" />+7517907798
-        </div>
-        <div class="items" id="two">
-          <img src="/icons/email.png" alt="emailicon" /> bairagiv401@gmail.com
-        </div>
-        <div class="items" id="three">register no.287493</div>
-      </div>
-      <!-- ******************************************************..Red BAR END..********************************************************************** -->
-
+   
+    </div>
       <!-- ******************************************************.. NAVBAR..************************************************************************** -->
-
       <nav id="navbar">
         <div id="logo">
           <div id="logoname">
@@ -51,50 +67,90 @@
           </div>
           <div id="logoimg"><img src="/photos/k.png" alt="" /></div>
         </div>
-        <div id="menu">
-          <ul>
-            <li class="list"><a href="#">Home</a></li>
-            <li class="list"><a href="#">About Mandal</a></li>
-            <li class="list"><a href="#">Committee Member</a></li>
-            <li class="list"><a href="#">Social Activities</a></li>
-            <li class="list"><a href="#">Gallery</a></li>
-          </ul>
-        </div>
-      </nav>
+          <div id="menu">
+            <ul>
+              <li class="list"><a href="#">Home</a></li>
+              <li class="list"><a href="#">About Mandal</a></li>
+              <li class="list"><a href="#">Committee Member</a></li>
+              <li class="list"><a href="#">Social Activities</a></li>
+              <li class="list"><a href="#">Gallery</a></li>
+            </ul>
+          </div>
+        </nav>
       <!-- **************************************************.. NAVBAR END..************************************************************************** -->
-      <div id="videobar">
-        <video loop autoplay src="/videos/videobar.mp4" ></video>
-        
-      </div>
+      <!-- <div id="videobar">
+        <video autoplay loop muted id="vid">
+          <source type="video/mp4" src="/videos/videobar.mp4" />
+          <source type="video/ogg" src="/videos/videobar.mp4" />
+        </video>
+        <div class="overlay">
+          <div class="d1"><p>कोणाला</p></div>
+          <div class="d2"><p>दाखवण्यासाठी नाही</p></div>
+          <div class="d3"><p>अस्तित्व जपण्यासाठी</p></div>
+        </div>
+      </div> -->
     </header>
     <!-- ************************************************************..End of header..**************************************************************** -->
 
+    <!-- *******************************************************..body1..***************************************************************************** -->
     <div id="body1">
       <div id="lorem1">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque velit
-          voluptas voluptatibus, quo magnam amet quis placeat dolorem facere
-          aspernatur illo tenetur, similique cupiditate praesentium tempora.
-          Accusamus nemo odio eaque!
+          संभाजीनगर (औरंगाबाद) हे महाराष्ट्र राज्यामधील एक ऐतिहासिक जिल्हा असुन
+          चारही बाजुनी ऐतिहासीक स्मारकांनी वेढलेला आहे. हे शहर खाम नदी तिरावर
+          वसलेले आहे. येथील इतिहासही तसाच आहे. या शहराचे नाव खडकी असे होते.
+          त्यानंतर १६५३ मध्ये औरंगजेबाने या शहराच नाव औरंगाबाद केले.
         </p>
       </div>
       <div id="img1"><img src="/photos/IMG-20210922-WA0001.jpg" alt="" /></div>
     </div>
+    <!-- *******************************************************..body2..***************************************************************************** -->
     <div id="body2">
       <div id="lorem2">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio eius
-          quis numquam commodi consequatur maiores impedit iusto totam.
-          Obcaecati magni, vero enim a voluptatem dicta minima molestias
-          sapiente hic dolores.
+          संभाजीनगर (औरंगाबाद) ही संतांची भूमी आहे. त्यातील एक संत श्रेष्ठ श्री
+          परमहंस बाळकृष्ण महाराज. शहरात त्यांचा मोठा शिष्यवर्ग आहे. महाराजांच
+          समाधी मंदिर हे ११७ वर्षे जुने आहे. सागवानी लाकूड दगडाचे बांधकाम आसलेले
+          हे मंदिर आहे . उल्लेखनीय म्हणजे, हे मंदिर आजही सुस्थितीत आहे.
         </p>
       </div>
       <div id="img2">
         <img src="/photos/PicsArt_06-24-11.54.11.png" alt="" />
       </div>
     </div>
+    <!-- *******************************************************..body3..***************************************************************************** -->
+    <div id="body3">
+      <div id="lorem3">
+        <p>
+            आशा या ऐतिहासिक नगरीत बाळ कृष्ण महाराज समाधी मंदिर परिसरात काही व्यक्तीनी येऊन २००९ मध्ये सार्वजनीक गणेश उत्सवाची सुरुवात केली तेथे मंडाळची स्थापना करण्यात आली त्यास "शिव स्वराज्य प्रतिष्ठान" असे नाव देण्यात आले .  हे मंडळ ऐतिहासीक, सामाजिक, सांस्कृतिक वारसा जपणारे मंडळ आहे.
+        </p>
+      </div>
+      <div id="img3">
+        <img src="/photos/bar2.jpg" alt="" />
+      </div>
+    </div>
     <footer>
-      <div>MADE BY Rushikesh & Sarang</div>
+      <div id="myfooter">
+        <div class="footsologon">
+          <p>कोणाला दाखवण्यासाठी नाही अस्तित्व जपण्यासाठी</p>
+        </div>
+        <div id="footerlogo">
+          <div id="footlogo1">
+            <a
+              href=" https://instagram.com/shivswarajya_pratishthan?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              ><img src="/icons/instagram-new.png" alt="instalogo" />
+            </a>
+          </div>
+          <div id="footlogo2">
+            <a
+              href="http://www.facebook.com/shivswarajya.pratishthan.5"
+              target="_blank"
+              ><img src="icons/facebook-new.png" alt="facelogo" />
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
